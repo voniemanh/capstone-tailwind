@@ -1,0 +1,218 @@
+/* ---------- Custom Colors ---------- */
+:root {
+  --color-orangy-red: #ff4a17;
+  --color-linen-ruffle: #faf6f1;
+  --color-cod-gray: #282828;
+  --animate-duration: 2s;
+}
+
+/* GLOBAL */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 700;
+  line-height: 1;
+  color: #191919;
+  font-family: "DM Sans", "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ---------- Button Hover Fill Effect ---------- */
+.btn-fill {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+.btn-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: var(--color-orangy-red);
+  z-index: -1;
+  transition: height 0.3s ease;
+}
+.btn-fill:hover::after {
+  height: 100%;
+}
+.btn-fill:hover {
+  border-color: var(--color-orangy-red) !important;
+  color: #fff !important;
+}
+
+/* ---------- Orange Gradient Blobs ---------- */
+.orange-gradient-1 {
+  background: radial-gradient(
+    circle,
+    rgba(255, 74, 23, 0.25) 0%,
+    rgba(255, 74, 23, 0) 70%
+  );
+}
+.orange-gradient-2 {
+  background: radial-gradient(
+    circle,
+    rgba(255, 120, 50, 0.2) 0%,
+    rgba(255, 120, 50, 0) 70%
+  );
+}
+
+/* ---------- Brand Marquee Slider ---------- */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.brand-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+.brand-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ---------- Footer Text Marquee ---------- */
+@keyframes footerMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.footer-text-slider {
+  display: flex;
+  width: max-content;
+  animation: footerMarquee 20s linear infinite;
+}
+
+/* ---------- Accordion ---------- */
+.accordion-item .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.35s ease,
+    padding 0.3s ease;
+  padding-top: 0;
+}
+.accordion-item.active .accordion-content {
+  max-height: 300px;
+  padding-top: 12px;
+}
+.accordion-item .accordion-icon img {
+  transition: transform 0.3s ease;
+}
+.accordion-item.active .accordion-icon img {
+  transform: rotate(45deg);
+}
+
+/* ---------- Pricing Tab ---------- */
+.price-button {
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: #000;
+  border: none;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+.price-button.active {
+  background-color: #000;
+  color: #fff;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: grid;
+}
+
+/* ---------- Sticky Header ---------- */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.site-header.sticky {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  animation: slideDown 0.35s ease;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Mobile Menu ---------- */
+.mobile-menu-trigger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+.mobile-nav {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 200;
+  padding: 24px;
+  overflow-y: auto;
+}
+.mobile-nav.open {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Play Button Pulse ---------- */
+@keyframes playPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.play-pulse {
+  animation: playPulse 2s ease-out infinite;
+}
