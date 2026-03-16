@@ -60,18 +60,12 @@ li {
 
 /* ---------- Orange Gradient Blobs ---------- */
 .orange-gradient-1 {
-  background: radial-gradient(
-    circle,
-    rgba(255, 74, 23, 0.25) 0%,
-    rgba(255, 74, 23, 0) 70%
-  );
+  /* filter: blur(55px); */
+  background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
 }
 .orange-gradient-2 {
-  background: radial-gradient(
-    circle,
-    rgba(255, 120, 50, 0.2) 0%,
-    rgba(255, 120, 50, 0) 70%
-  );
+  /* filter: blur(55px); */
+  background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
 }
 
 /* ---------- Brand Marquee Slider ---------- */

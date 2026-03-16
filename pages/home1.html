@@ -20,6 +20,9 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,900&family=Inter:wght@100;200;300;400;500;600;700;900&display=swap"
     rel="stylesheet" />
 
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <!-- TAILWIND CSS -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -112,7 +115,6 @@
       </div>
     </header>
 
-
     <!-- ===== MAIN ===== -->
     <main class="relative overflow-hidden">
       <!-- ===== HERO SECTION ===== -->
@@ -121,7 +123,8 @@
           class="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-[#efeae4] pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xl:pb-[133px]">
           <div class="container">
             <!-- Hero Content -->
-            <div class="mb-14 flex flex-col items-center text-center lg:mb-20">
+            <div
+              class="mb-14 flex flex-col items-center text-center lg:mb-20 animate__animated animate__fadeInUp animate__delay-1s">
               <h1
                 class="mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] text-5xl md:text-6xl lg:text-7xl xl:text-[120px]">
                 Simplify your SaaS solution with AI
@@ -142,7 +145,7 @@
             </div>
 
             <!-- Hero Image -->
-            <div class="overflow-hidden rounded-2xl bg-black">
+            <div class="overflow-hidden rounded-2xl bg-black animate__animated animate__zoomIn animate__delay-1s">
               <img src="../img/home1/image_3.jpg" alt="hero-dashboard" width="1296" height="640"
                 class="h-auto w-full opacity-90">
             </div>
@@ -151,7 +154,7 @@
             <div class="my-10 h-px w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div>
 
             <!-- Brand Trust Text -->
-            <div class="mx-auto mb-12 max-w-[715px] text-center lg:mb-16">
+            <div class="mx-auto mb-12  text-center lg:mb-16 animate__animated animate__fadeInUp animate__delay-2s">
               <p class="text-lg">
                 Companies of all sizes trust us to find AI SaaS critical to
                 their growth and innovation
@@ -159,8 +162,8 @@
             </div>
 
             <!-- Brand Slider -->
-            <div class="overflow-hidden">
-              <div class="brand-marquee-track">
+            <div class="overflow-hidden animate__animated animate__fadeInUp animate__delay-3s">
+              <div class="brand-marquee-track ">
                 <div class="flex items-center gap-20 pr-20">
                   <img src="../img/home1/image_4.png" alt="brand-1" width="180" height="38"
                     class="max-w-full opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
@@ -198,14 +201,13 @@
             style="animation-duration:25s;"></div>
         </div>
       </section>
-      <!-- ===== HERO END ===== -->
 
       <!-- ===== SERVICE SECTION ===== -->
       <section id="section-service">
         <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
           <div class="container">
             <!-- Section Title -->
-            <div class="mb-10 lg:mb-16 xl:mb-20">
+            <div class="mb-10 lg:mb-16 xl:mb-20 animate__animated animate__fadeInUp animate__delay-2s">
               <div class="md:max-w-sm lg:max-w-xl xl:max-w-[746px]">
                 <h2 class="text-4xl sm:text-6xl md:text-7xl xl:text-[80px]">Core features that make it valuable</h2>
               </div>
@@ -213,7 +215,7 @@
 
             <!-- Service Grid -->
             <ul
-              class="grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4">
+              class="grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4 animate__animated animate__fadeInUp animate__delay-3s">
 
               <!-- Item 1 -->
               <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
@@ -330,7 +332,6 @@
           </div>
         </div>
       </section>
-      <!-- ===== SERVICE END ===== -->
 
       <!-- ===== CONTENT SECTION 1 ===== -->
       <section id="content-section-1">
@@ -338,12 +339,13 @@
           <div class="container">
             <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28">
               <!-- Image -->
-              <div class="order-2 overflow-hidden rounded-xl md:order-1">
+              <div
+                class="order-2 overflow-hidden rounded-xl md:order-1 animate__animated animate__fadeInRight animate__delay-3s">
                 <img src="../img/home1/image_19.jpg" alt="content-image-1" width="526" height="450"
                   class="h-auto w-full">
               </div>
               <!-- Text -->
-              <div class="order-1 md:order-2">
+              <div class="order-1 md:order-2 animate__animated animate__fadeInLeft animate__delay-3s">
                 <div class="mb-6">
                   <h2 class="text-4xl sm:text-6xl md:text-7xl xl:text-[80px]">Accessible to a wider audience</h2>
                 </div>
@@ -364,7 +366,6 @@
           </div>
         </div>
       </section>
-      <!-- ===== CONTENT SECTION 1 END ===== -->
 
       <!-- ===== CONTENT SECTION 2 ===== -->
       <section id="content-section-2">
@@ -373,11 +374,13 @@
             <div
               class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
               <!-- Image -->
-              <div class="order-2 overflow-hidden rounded-xl w-fit">
+              <div
+                class="order-2 overflow-hidden rounded-xl w-fit animate__animated animate__fadeInRight animate__delay-3s">
                 <img src="../img/home1/image_20.jpg" alt="content-image-2">
               </div>
+
               <!-- Text -->
-              <div class="order-1">
+              <div class="order-1 animate__animated animate__fadeInLeft animate__delay-3s">
                 <div class="mb-6">
                   <h2 class="text-4xl sm:text-6xl md:text-7xl xl:text-[80px]">Providing quick deploy solutions</h2>
                 </div>
@@ -414,12 +417,12 @@
           </div>
         </div>
       </section>
-      <!-- ===== CONTENT SECTION 2 END ===== -->
 
       <!-- ===== FUNFACT SECTION ===== -->
       <section id="funfact-section">
         <div class="mx-auto max-w-[1500px] px-5">
-          <div class="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-2">
+          <div
+            class="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-2 animate__animated animate__fadeInUp animate__delay-3s">
             <!-- Left: Video/Image -->
             <div class="relative overflow-hidden rounded-[30px] lg:rounded-[50px]">
               <img src="../img/home1/image_22.jpg" alt="funfact-image" width="721" height="784"
@@ -452,17 +455,19 @@
               </div>
               <div class="my-14 h-px w-full bg-[#282828]"></div>
               <ul
-                class="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-start xl:gap-x-20">
+                class="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-start xl:gap-x-20 w-full">
                 <li>
-                  <p class="text-5xl font-bold text-[#FF4A17] md:text-6xl lg:text-7xl xl:text-[120px] counter"
-                    data-target="92">92%</p>
+                  <p class="text-5xl font-bold text-[#FF4A17] md:text-6xl lg:text-7xl xl:text-[120px]">
+                    <span class="counter">92</span> %
+                  </p>
                   <span class="block text-lg font-normal text-white lg:text-[21px] mt-2">
                     Customer service inquiries
                   </span>
                 </li>
                 <li>
-                  <p class="text-5xl font-bold text-[#FF4A17] md:text-6xl lg:text-7xl xl:text-[120px] counter"
-                    data-target="75">75%</p>
+                  <p class="text-5xl font-bold text-[#FF4A17] md:text-6xl lg:text-7xl xl:text-[120px]">
+                    <span class="counter">75</span> %
+                  </p>
                   <span class="block text-lg font-normal text-white lg:text-[21px] mt-2">
                     Using financial institutions
                   </span>
@@ -472,14 +477,13 @@
           </div>
         </div>
       </section>
-      <!-- ===== FUNFACT END ===== -->
 
       <!-- ===== PRICING SECTION ===== -->
       <section id="pricing-section">
         <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
           <div class="container">
             <!-- Section Title -->
-            <div class="mb-10 text-center lg:mb-12">
+            <div class="mb-10 text-center lg:mb-12 animate__animated animate__fadeInUp animate__delay-2s">
               <div class="mx-auto md:max-w-xs lg:max-w-xl xl:max-w-[746px]">
                 <h2 class="text-4xl sm:text-6xl md:text-7xl xl:text-[80px]">Cost-effectively build any
                   software</h2>
@@ -498,9 +502,10 @@
             <div class="mt-12 lg:mt-16 xl:mt-20">
               <!-- Monthly -->
               <ul id="monthly" class="tab-content active grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+
                 <!-- Beginner -->
                 <li
-                  class="group flex flex-col rounded-[10px] bg-[#efeae4] p-10 transition-all duration-300 ease-linear hover:bg-black">
+                  class="group flex flex-col rounded-[10px] bg-[#efeae4] p-10 transition-all duration-300 ease-linear hover:bg-black animate__animated animate__flipInY animate__delay-1s">
                   <h3
                     class="text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
                     Beginner</h3>
@@ -520,9 +525,10 @@
                     class="btn-fill mt-auto block rounded-full border-2 border-black bg-transparent py-4 text-center text-black font-bold group-hover:border-[#FF4A17] group-hover:text-white">Choose
                     the plan</a>
                 </li>
+
                 <!-- Starter -->
                 <li
-                  class="group flex flex-col rounded-[10px] bg-[#efeae4] p-10 transition-all duration-300 ease-linear hover:bg-black">
+                  class="group flex flex-col rounded-[10px] bg-[#efeae4] p-10 transition-all duration-300 ease-linear hover:bg-black animate__animated animate__flipInY animate__delay-1s">
                   <h3
                     class="text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
                     Starter</h3>
@@ -541,9 +547,10 @@
                     class="btn-fill mt-auto block rounded-full border-2 border-black bg-transparent py-4 text-center text-black font-bold group-hover:border-[#FF4A17] group-hover:text-white">Choose
                     the plan</a>
                 </li>
+
                 <!-- Pro -->
                 <li
-                  class="group flex flex-col rounded-[10px] bg-[#efeae4] p-10 transition-all duration-300 ease-linear hover:bg-black">
+                  class="group flex flex-col rounded-[10px] bg-[#efeae4] p-10 transition-all duration-300 ease-linear hover:bg-black animate__animated animate__flipInY animate__delay-1s">
                   <h3
                     class="text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
                     Pro</h3>
@@ -635,7 +642,6 @@
           </div>
         </div>
       </section>
-      <!-- ===== PRICING END ===== -->
 
       <!-- ===== FAQ SECTION ===== -->
       <section id="faq-section">
@@ -643,7 +649,7 @@
           <div class="container">
             <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
               <!-- FAQ Left -->
-              <div class="flex flex-col">
+              <div class="flex flex-col animate__animated animate__fadeInLeft animate__delay-1s">
                 <div class="mb-6">
                   <h2 class="text-4xl sm:text-6xl md:text-7xl xl:text-[80px]">Freely ask us for more
                     information</h2>
@@ -662,7 +668,7 @@
               </div>
 
               <!-- FAQ Right: Accordion -->
-              <div class="md:ml-10 lg:ml-20 xl:ml-32">
+              <div class="md:ml-10 lg:ml-20 xl:ml-32 animate__animated animate__fadeInRight animate__delay-1s">
                 <ul class="accordion">
                   <li
                     class="accordion-item active border-b border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
@@ -725,14 +731,13 @@
           </div>
         </div>
       </section>
-      <!-- ===== FAQ END ===== -->
 
       <!-- ===== TESTIMONIAL SECTION ===== -->
       <section id="testimonial-section">
         <div class="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
           <div class="container">
             <!-- Title -->
-            <div class="mb-10 text-center lg:mb-16 xl:mb-20">
+            <div class="mb-10 text-center lg:mb-16 xl:mb-20 animate__animated animate__fadeInUp animate__delay-1s">
               <div class="mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]">
                 <h2 class="text-4xl sm:text-6xl md:text-7xl xl:text-[80px] text-white">Positive feedback from our users
                 </h2>
@@ -743,7 +748,7 @@
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               <!-- Item 1 -->
               <div
-                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between">
+                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between animate__animated animate__fadeInRight animate__delay-2s">
                 <div class="flex gap-1">
                   <img src="../img/home1/image_24.svg" alt="content-image-2">
                 </div>
@@ -764,7 +769,7 @@
               </div>
               <!-- Item 2 -->
               <div
-                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between">
+                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between animate__animated animate__fadeInRight animate__delay-2s">
                 <div class="flex gap-1">
                   <img src="../img/home1/image_24.svg" alt="content-image-2">
                 </div>
@@ -785,7 +790,7 @@
               </div>
               <!-- Item 3 -->
               <div
-                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between">
+                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between animate__animated animate__fadeInRight animate__delay-2s">
                 <div class="flex gap-1">
                   <img src="../img/home1/image_24.svg" alt="content-image-2">
                 </div>
@@ -808,7 +813,7 @@
               </div>
               <!-- Item 4 -->
               <div
-                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between">
+                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between animate__animated animate__fadeInLeft animate__delay-2s">
                 <div class="flex gap-1">
                   <img src="../img/home1/image_24.svg" alt="content-image-2">
                 </div>
@@ -829,7 +834,7 @@
               </div>
               <!-- Item 5 -->
               <div
-                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between">
+                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between animate__animated animate__fadeInLeft animate__delay-2s">
                 <div class="flex gap-1">
                   <img src="../img/home1/image_24.svg" alt="content-image-2">
                 </div>
@@ -850,7 +855,7 @@
               </div>
               <!-- Item 6 -->
               <div
-                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between">
+                class="flex flex-col gap-y-8 rounded-[10px] border border-[#282828] p-[30px] text-white justify-between animate__animated animate__fadeInLeft animate__delay-2s">
                 <div class="flex gap-1">
                   <img src="../img/home1/image_24.svg" alt="content-image-2">
                 </div>
@@ -873,14 +878,12 @@
           </div>
         </div>
       </section>
-      <!-- ===== TESTIMONIAL END ===== -->
 
       <!-- Background blobs -->
       <div class="orange-gradient-1 absolute -left-[15px] top-[61%] -z-[1] h-[400px] w-[400px] rounded-full">
       </div>
       <div class="orange-gradient-2 absolute -left-[100px] top-[64%] -z-[1] h-[360px] w-[360px] rounded-full">
       </div>
-
     </main>
     <!-- ===== MAIN END ===== -->
 
@@ -1019,9 +1022,21 @@
         class="orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] rounded-full -rotate-[58deg]">
       </div>
     </footer>
-    <!-- ===== FOOTER END ===== -->
 
   </div><!-- page-wrapper end -->
+
+  <!-- Thư viện hỗ trợ Jquery giúp chạy hiệu ứng của các thư viên animation -->
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+    integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+  <!-- Jquery Waypoint -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <!-- CountUp JS -->
+  <script src="../js/jquery.countup.js"></script>
+  <script>
+    $(".counter").countUp();
+  </script>
 
 </body>
 
