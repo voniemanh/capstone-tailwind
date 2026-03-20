@@ -1,6 +1,4 @@
-/* =========================================
-   CSS VARIABLES
-   ========================================= */
+/* CSS VARIABLES */
 :root {
   --primary_color: #39ff14;
   --secondary_color: #191919;
@@ -8,9 +6,7 @@
   --background_grey: rgb(236, 236, 236);
 }
 
-/* =========================================
-   UTILITY CLASSES
-   ========================================= */
+/* UTILITY CLASSES */
 .bg-colorGreen {
   background-color: var(--primary_color);
 }
@@ -39,23 +35,20 @@ hr {
   border: 1px solid var(--secondary_color);
 }
 
-/* =========================================
-   LAYOUT – SECTION SPACING
-   All sections below header get equal gap
-   ========================================= */
+/* LAYOUT – SECTION SPACING */
 main > section,
 main > hr {
-  margin-bottom: 5rem; /* 80px — the single source of truth */
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 768px) {
   main > section,
   main > hr {
-    margin-bottom: 3rem; /* 48px on mobile */
+    margin-bottom: 3rem;
   }
 }
 
-/* Override any inline Tailwind mb-* on sections so they all match */
+/* Override any inline Tailwind mb-* on sections*/
 section.promo,
 section.securing,
 section.protect,
@@ -86,9 +79,7 @@ section.protect-form {
   }
 }
 
-/* =========================================
-   HEADER / HERO
-   ========================================= */
+/* HEADER / HERO */
 header {
   background-image: url(/img/home4/bg-header.jpg);
   min-height: 100vh;
@@ -98,17 +89,8 @@ header {
   z-index: 0;
 }
 
-/* Give main the right top margin so it clears the hero */
 main {
   margin-top: 0;
-}
-
-/* =========================================
-   PROMO SECTION
-   Lift cards up to overlap hero bottom edge
-   ========================================= */
-.promo .transform {
-  transform: translateY(-40%);
 }
 
 @media (max-width: 1024px) {
@@ -124,9 +106,7 @@ main {
   }
 }
 
-/* =========================================
-   CONTAINERS – consistent horizontal padding
-   ========================================= */
+/* CONTAINERS – consistent horizontal padding */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -150,9 +130,7 @@ main {
   }
 }
 
-/* =========================================
-   TYPOGRAPHY SCALE – fluid headings
-   ========================================= */
+/* TYPOGRAPHY SCALE – fluid headings */
 .title {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
@@ -161,9 +139,7 @@ main {
   font-size: clamp(2rem, 4vw + 1rem, 4.375rem);
 }
 
-/* =========================================
-   BUTTONS
-   ========================================= */
+/*  BUTTONS */
 .btn,
 .btn-black,
 .btn-green {
@@ -216,12 +192,6 @@ main {
 
 .btn:hover::before,
 .btn-black:hover::before,
-.btn-green::before {
-  /* already set via transform */
-}
-
-.btn:hover::before,
-.btn-black:hover::before,
 .btn-green:hover::before {
   transform: translateY(0);
 }
@@ -241,9 +211,7 @@ main {
   z-index: 1;
 }
 
-/* =========================================
-   MARQUEE / TEXT SLIDE
-   ========================================= */
+/* MARQUEE / TEXT SLIDE */
 .text-slide {
   overflow: hidden;
 }
@@ -263,9 +231,7 @@ main {
   }
 }
 
-/* =========================================
-   REVIEW SLIDER
-   ========================================= */
+/* REVIEW SLIDER */
 .review {
   overflow: hidden;
 }
@@ -294,9 +260,7 @@ main {
   border: 1px solid #2a2a2a;
 }
 
-/* =========================================
-   CYBERSECURITY CARDS
-   ========================================= */
+/* CYBERSECURITY CARDS */
 .cyber-cards {
   transition: border-color 0.3s ease;
 }
@@ -339,9 +303,7 @@ main {
   opacity: 1;
 }
 
-/* =========================================
-   PLAY BUTTON GLOW
-   ========================================= */
+/* PLAY BUTTON GLOW */
 @keyframes glow {
   0% {
     box-shadow:
@@ -364,9 +326,7 @@ main {
   animation: glow 1.8s ease-in-out infinite;
 }
 
-/* =========================================
-   FAQ ACCORDION ICON
-   ========================================= */
+/* FAQ ACCORDION ICON */
 .faq-icon-plus {
   position: relative;
   display: block;
@@ -400,9 +360,7 @@ button[aria-expanded="true"] .faq-icon-plus::before {
   background: var(--primary_color);
 }
 
-/* =========================================
-   NAVIGATION – DESKTOP DROPDOWN
-   ========================================= */
+/* NAVIGATION – DESKTOP DROPDOWN */
 ul {
   list-style: none;
   margin: 0;
@@ -480,16 +438,12 @@ nav ul li:hover > a .dropdown-icon {
   transform: rotate(-90deg);
 }
 
-/* =========================================
-   NAVIGATION – MOBILE
-   ========================================= */
+/* NAVIGATION – MOBILE */
 .mobile-submenu {
   overflow: hidden;
 }
 
-/* =========================================
-   FADE-UP ANIMATION
-   ========================================= */
+/* FADE-UP ANIMATION */
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
@@ -501,4 +455,14 @@ nav ul li:hover > a .dropdown-icon {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/* overlapping */
+.promo {
+  position: relative;
+  z-index: 30;
+  margin-top: -80px;
+}
+
+.hero-section {
+  padding-bottom: 120px;
 }
