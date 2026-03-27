@@ -164,7 +164,7 @@ main {
 }
 
 .btn-green {
-  border: 2px solid black;
+  border: 1px solid black;
   background-color: var(--primary_color);
   color: #000;
 }
@@ -465,4 +465,58 @@ nav ul li:hover > a .dropdown-icon {
 
 .hero-section {
   padding-bottom: 120px;
+}
+
+/* Reset: tất cả fade-up đều pause cho đến khi JS kích hoạt */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.7s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide từ trái */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideLeft 0.75s ease forwards;
+  animation-play-state: paused;
+  animation-delay: 0.1s;
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide từ phải */
+.slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+  animation: slideRight 0.75s ease forwards;
+  animation-play-state: paused;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Đảm bảo các cột con không bị overflow ẩn */
+.securing .container,
+.protect .container,
+.optimize .container {
+  overflow: visible;
 }
