@@ -1,8 +1,4 @@
-/* ============================================
-   SCROLL ANIMATIONS
-   - fade-up: mọi section
-   - slide-in-left / slide-in-right: section 2 cột
-   ============================================ */
+/* SCROLL ANIMATIONS */
 
 const observerOptions = {
   threshold: 0.12,
@@ -45,9 +41,7 @@ document.querySelectorAll(".fade-up").forEach((el) => {
   scrollObserver.observe(el);
 });
 
-/* ============================================
-   COUNTER ANIMATION (chỉ chạy khi scroll tới)
-   ============================================ */
+// COUNTER ANIMATION (chỉ chạy khi scroll tới)
 
 const counterObserver = new IntersectionObserver(
   (entries, obs) => {
@@ -77,9 +71,7 @@ document
   .querySelectorAll(".counter")
   .forEach((el) => counterObserver.observe(el));
 
-/* ============================================
-   MOBILE MENU TOGGLE
-   ============================================ */
+//  MOBILE MENU TOGGLE
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".mobile-toggle").forEach((btn) => {
