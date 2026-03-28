@@ -62,7 +62,7 @@
                   ></i>
                 </a>
                 <ul
-                  class="absolute top-full left-0 mt-2 w-44 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                  class="absolute top-full left-0 w-44 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                 >
                   <li>
                     <a
@@ -110,7 +110,7 @@
                   ></i>
                 </a>
                 <ul
-                  class="absolute top-full left-0 mt-2 w-44 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                  class="absolute top-full left-0 w-44 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                 >
                   <li>
                     <a
@@ -139,7 +139,7 @@
                   ></i>
                 </a>
                 <ul
-                  class="absolute top-full left-0 mt-2 w-44 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                  class="absolute top-full left-0 w-44 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                 >
                   <li>
                     <a
@@ -1639,6 +1639,35 @@
     <script src="../js/jquery.countup.js"></script>
     <script>
       $(".counter").countUp();
+    </script>
+
+    <!-- Dropdown Nav -->
+    <script>
+      document.querySelectorAll("nav .relative").forEach(function (wrapper) {
+        var ul = wrapper.querySelector("ul");
+        if (!ul) return;
+        var hideTimer;
+
+        function showDropdown() {
+          clearTimeout(hideTimer);
+          ul.style.opacity = "1";
+          ul.style.visibility = "visible";
+          ul.style.pointerEvents = "auto";
+        }
+
+        function hideDropdown() {
+          hideTimer = setTimeout(function () {
+            ul.style.opacity = "";
+            ul.style.visibility = "";
+            ul.style.pointerEvents = "";
+          }, 150);
+        }
+
+        wrapper.addEventListener("mouseenter", showDropdown);
+        wrapper.addEventListener("mouseleave", hideDropdown);
+        ul.addEventListener("mouseenter", showDropdown);
+        ul.addEventListener("mouseleave", hideDropdown);
+      });
     </script>
   </body>
 </html>
